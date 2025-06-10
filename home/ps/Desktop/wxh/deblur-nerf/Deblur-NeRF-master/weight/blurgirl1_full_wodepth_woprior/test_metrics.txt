@@ -1,0 +1,57 @@
+num_gpu = 1
+expname = blurgirl1_full_wodepth_woprior
+basedir = home/ps/Desktop/wxh/deblur-nerf/Deblur-NeRF-master/weight
+datadir = /home/ps/Desktop/wxh/deblur-nerf/deblurnerf_dataset/real_camera_motion_blur/blurgirl
+tbdir =/home/ps/Desktop/wxh/deblur-nerf/Deblur-NeRF-master/tensorboard
+dataset_type = llff
+
+factor = 4
+llffhold = 7
+
+N_rand = 512
+N_samples = 64
+N_importance = 64
+N_iters = 750000
+lrate = 5e-4
+lrate_decay = 250
+
+use_viewdirs = True
+raw_noise_std = 1e0
+rgb_activate = sigmoid
+
+kernel_start_iter = 1200
+# kernel_prior_weight = 0.1
+# prior_start_iter = 15000
+kernel_align_weight = 0.1
+align_start_iter = 0
+align_end_iter = 730000
+
+kernel_type = deformablesparsekernel
+kernel_ptnum = 5
+kernel_random_hwindow = 0.1
+kernel_random_mode = input
+
+kernel_img_embed = 32
+kernel_rand_embed = 2  # the in_embed
+kernel_spatial_embed = 2
+kernel_depth_embed = 0
+
+kernel_num_hidden = 4
+kernel_num_wide = 64
+kernel_shortcut
+
+kernel_spatialvariant_trans
+tone_mapping_type = gamma
+
+
+
+============================
+||
+\/
+iter20000/globalstep19999: MSE:0.03154972 PSNR:21.08921087 SSIM:0.72499364 LPIPS:0.26781413
+iter40000/globalstep39999: MSE:0.02844829 PSNR:21.56338264 SSIM:0.75217424 LPIPS:0.21558268
+iter60000/globalstep59999: MSE:0.02640885 PSNR:21.88508662 SSIM:0.77115332 LPIPS:0.19196720
+iter80000/globalstep79999: MSE:0.02562716 PSNR:22.02197697 SSIM:0.78525889 LPIPS:0.17462939
+iter100000/globalstep99999: MSE:0.02545468 PSNR:22.07893608 SSIM:0.78781252 LPIPS:0.16577931
+iter120000/globalstep119999: MSE:0.02399287 PSNR:22.33316124 SSIM:0.79558717 LPIPS:0.15838523
+iter140000/globalstep139999: MSE:0.02457124 PSNR:22.24246472 SSIM:0.80018509 LPIPS:0.15524906
