@@ -16,12 +16,12 @@ Changing the data path and log path in the configs/demo_blurfactory.txt
 
 
 ## Method Overview
-![image]([https://github.com/luckhui0505/MP-NeRF/blob/master/framework.png](https://github.com/luckhui0505/DF-NeRF/blob/main/framework.jpg)) 
+![image](https://github.com/luckhui0505/DF-NeRF/blob/main/framework.jpg) 
 The overall network structure of DF-NeRF.
 ## Comparison of Experimental Results
-![image]([https://github.com/luckhui0505/MP-NeRF/blob/master/result.png](https://github.com/luckhui0505/DF-NeRF/blob/main/result1.jpg)) 
+![image](https://github.com/luckhui0505/DF-NeRF/blob/main/result1.jpg) 
 Quantitative results on synthetic scenes. 
-![image]([https://github.com/luckhui0505/MP-NeRF/blob/master/result.png](https://github.com/luckhui0505/DF-NeRF/blob/main/result2.jpg)) 
+![image]([https://github.com/luckhui0505/DF-NeRF/blob/main/result2.jpg)) 
 Quantitative results on real scenes. 
 ## Some Notes
 ### GPU Memory
