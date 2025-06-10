@@ -21,7 +21,7 @@ The overall network structure of DF-NeRF.
 ## Comparison of Experimental Results
 ![image](https://github.com/luckhui0505/DF-NeRF/blob/main/result1.jpg) 
 Quantitative results on synthetic scenes. 
-![image]([https://github.com/luckhui0505/DF-NeRF/blob/main/result2.jpg)) 
+![image](https://github.com/luckhui0505/DF-NeRF/blob/main/result2.jpg)
 Quantitative results on real scenes. 
 ## Some Notes
 ### GPU Memory
